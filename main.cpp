@@ -8,5 +8,6 @@ int main(){
     game->printDice();
     game->rollDice();
     game->printDice();
+
     return 0;
 }

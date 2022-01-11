@@ -12,4 +12,6 @@ public:
     void printDice();
 
     bool checkYahtzee();
+
+    void rollDice(int num);
 };

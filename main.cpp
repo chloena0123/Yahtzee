@@ -20,11 +20,9 @@ int main(){
 
         if(numDicetoReroll < 5) {
             game->rollDice(numDicetoReroll);
-            game->printDice();
         }
         else {
             game->rollDice();
-            game->printDice();
         }
 
         if(game->checkYahtzee()){

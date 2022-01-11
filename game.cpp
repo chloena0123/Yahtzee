@@ -32,14 +32,11 @@ void Game::printDice() {
     }
 }
 
-bool Game::checkYahtzee(){
-    for(int i = 0; i<NUM_DICE; i++){
-        if (dice[i]->getVal() == dice[i+1]->getVal()){
-            return true;
-        }else{
-        return false;
+bool Game::checkYahtzee() {
+    for (int i = 0; i < NUM_DICE - 1; i++) {
+        if (dice[i]->getVal() != dice[i + 1]->getVal()) {
+            return false;
+        }
     }
+    return true;
 }
-
-
-

@@ -2,9 +2,9 @@ class Dice {
   protected:
   int value;
   
-  public;
+  public:
   Dice();
   void rollDice();
   int getVal();
   virtual ~Dice();
-}
+};

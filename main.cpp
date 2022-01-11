@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include "dice.h"
 using namespace std;
 
 Dice* d = new Dice();
 
-cout << d.getVal() << endl;
+cout << "h" << std::endl;

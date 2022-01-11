@@ -26,6 +26,8 @@ int main(){
         }
 
         if(game->checkYahtzee()){
+            game->printDice();
+            cout << "Congratulations! You've won the game!" << endl;
             break;
         }
     }

@@ -7,4 +7,6 @@ class Dice {
   void rollDice();
   int getVal();
   virtual ~Dice();
+
+    void printDice();
 };

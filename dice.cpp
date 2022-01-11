@@ -15,8 +15,26 @@ int Dice::getVal(){
   return value;
 }
 
+void Dice::printDice(){
+    int v = getVal();
+    if(v == 1)
+        cout << "⚀";
+    else if (v == 2)
+        cout << "⚁";
+    else if (v == 3)
+        cout << "⚂";
+    else if (v == 4)
+        cout << "⚃";
+    else if (v == 5)
+        cout << "⚄";
+    else
+        cout << "⚅";
+
+}
+
 Dice::~Dice(){
 
 }
+
 
 

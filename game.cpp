@@ -28,8 +28,10 @@ void Game::rollDice(int num){
 
 void Game::printDice() {
     for(int i = 0; i < NUM_DICE; i++){
-        cout << "die #" << i+1 << " = " << dice[i]->getVal() << endl;
+        dice[i]->printDice();
+        cout << " ";
     }
+    cout << endl;
 }
 
 bool Game::checkYahtzee() {

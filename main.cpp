@@ -5,9 +5,23 @@ using namespace std;
 
 int main(){
     Game* game = new Game();
-    game->printDice();
+
+    cout << "====== Welcome to Yahtzee! =====" << endl;
     game->rollDice();
-    game->printDice();
+    while(true){
+        game->printDice();
+        int numDicetoReroll;
+
+        if(numDicetoReroll < 5){
+
+        }
+        else {
+            game->rollDice();
+        }
+        if(game->checkYahtzee()){
+            break;
+        }
+    }
 
     return 0;
 }

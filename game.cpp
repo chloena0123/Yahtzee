@@ -33,10 +33,10 @@ void Game::printDice() {
 }
 
 bool Game::checkYahtzee(){
-
-    if (){
-        return true;
-    }else{
+    for(int i = 0; i<NUM_DICE; i++){
+        if (dice[i]->getVal() == dice[i+1]->getVal()){
+            return true;
+        }else{
         return false;
     }
 }

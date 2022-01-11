@@ -1,7 +1,12 @@
 #include <bits/stdc++.h>
+#include <iostream>
 #include "dice.h"
 using namespace std;
 
-Dice* d = new Dice();
+int main(){
+    Dice* d = new Dice();
 
-cout << d.getVal() << endl;
+    std::cout << d.getVal() << std::endl;
+
+    return 0;
+}

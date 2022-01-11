@@ -23,9 +23,6 @@ void Game::printDice() {
     }
 }
 
-Dice** Game::getGame() {
-    return dice;
-}
 
 
 

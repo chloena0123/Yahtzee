@@ -9,6 +9,5 @@ int main(){
     game->rollDice();
     game->printDice();
 
-    cout<<"Hello";
     return 0;
 }

@@ -23,6 +23,9 @@ void Game::printDice() {
     }
 }
 
+void Game::checkYahtzee(){
+
+}
 
 
 

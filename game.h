@@ -11,5 +11,5 @@ public:
 
     void printDice();
 
-    void checkYahtzee();
+    bool checkYahtzee();
 };

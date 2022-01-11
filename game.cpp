@@ -23,8 +23,13 @@ void Game::printDice() {
     }
 }
 
-void Game::checkYahtzee(){
+bool Game::checkYahtzee(){
 
+    if (){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 

@@ -11,6 +11,7 @@ Game::Game() {
 }
 
 void Game::rollDice() {
+    srand((unsigned) time(NULL));
     for(int i = 0; i < NUM_DICE; i++){
         dice[i]->rollDice();
     }
@@ -20,6 +21,10 @@ void Game::printDice() {
     for(int i = 0; i < NUM_DICE; i++){
         cout << "die #" << i+1 << " = " << dice[i]->getVal() << endl;
     }
+}
+
+Dice** Game::getGame() {
+    return dice;
 }
 
 

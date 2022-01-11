@@ -8,7 +8,6 @@ Dice::Dice(){
 }
 
 void Dice::rollDice(){
-  srand((unsigned) time(NULL));
   value = rand() % 6 + 1;
 }
 

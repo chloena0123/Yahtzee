@@ -27,8 +27,10 @@ bool Game::checkYahtzee(){
     for(int i = 0; i<NUM_DICE; i++){
         if (dice[i]->getVal() == dice[i+1]->getVal()){
             return true;
-        }else{
-        return false;
+        }else {
+            return false;
+
+        }
     }
 }
 

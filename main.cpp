@@ -8,5 +8,7 @@ int main(){
     game->printDice();
     game->rollDice();
     game->printDice();
+
+    cout<<"Hello";
     return 0;
 }

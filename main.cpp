@@ -5,9 +5,30 @@ using namespace std;
 
 int main(){
     Game* game = new Game();
-    game->printDice();
+
+    bool availableRolls = false;
+    int currRolls = 0;
+
+    cout << "====== Welcome to Yahtzee! =====" << endl;
     game->rollDice();
-    game->printDice();
+    while(true){
+        game->printDice();
+
+        cout << "Number of dice to reroll: ";
+        int numDicetoReroll;
+        cin >> numDicetoReroll;
+
+        if(numDicetoReroll < 5) {
+            game->rollDice(numDicetoReroll);
+        }
+        else {
+            game->rollDice();
+        }
+
+        if(game->checkYahtzee()){
+            break;
+        }
+    }
 
     return 0;
 }

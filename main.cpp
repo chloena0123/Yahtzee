@@ -1,7 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include "dice.h"
 using namespace std;
 
-Dice* d = new Dice();
-
-cout << "h" << std::endl;
+int main(){
+    Dice* d = new Dice();
+    cout << "h" << std::endl;
+}

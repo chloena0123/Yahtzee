@@ -5,6 +5,8 @@ using namespace std;
 
 int main(){
     Game* game = new Game();
+    game->printDice();
     game->rollDice();
+    game->printDice();
     return 0;
 }

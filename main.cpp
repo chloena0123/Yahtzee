@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     Dice* d = new Dice();
 
-    std::cout << d.getVal() << std::endl;
+    std::cout << d->getVal() << std::endl;
 
     return 0;
 }

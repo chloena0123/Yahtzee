@@ -1,40 +1,40 @@
 #include <bits/stdc++.h>
-#include "game.h"
+#include "user.h"
 
 using namespace std;
 
-Game::Game() {
-    dice = new Dice*[NUM_DICE];
+User::User() {
+    dice = new Die*[NUM_DICE];
     for(int i = 0; i < NUM_DICE; i++){
-        dice[i] = new Dice();
+        dice[i] = new Die();
     }
 }
 
-void Game::rollDice() {
+void User::rollDice() {
     srand((unsigned) time(NULL));
     for(int i = 0; i < NUM_DICE; i++){
-        dice[i]->rollDice();
+        dice[i]->rollDie();
     }
 }
 
-void Game::rollDice(int num){
+void User::rollDice(int num){
     cout << "Enter the die number you wish to re-roll" << endl;
     for(int i = 0; i < num; i++){
         int input;
         cin >> input;
-        dice[input-1]->rollDice();
+        dice[input-1]->rollDie();
     }
 }
 
-void Game::printDice() {
+void User::printDice() {
     for(int i = 0; i < NUM_DICE; i++){
-        dice[i]->printDice();
+        dice[i]->printDie();
         cout << " ";
     }
     cout << endl;
 }
 
-bool Game::checkYahtzee() {
+bool User::checkYahtzee() {
     for (int i = 0; i < NUM_DICE - 1; i++) {
         if (dice[i]->getVal() != dice[i + 1]->getVal()) {
             return false;

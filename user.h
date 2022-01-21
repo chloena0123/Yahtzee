@@ -1,11 +1,11 @@
-#include "dice.h"
+#include "die.h"
 #define NUM_DICE 5
 
-class Game : Dice{
+class User : Die{
 private:
-    Dice** dice;
+    Die** dice;
 public:
-    Game();
+    User();
 
     void rollDice();
 

@@ -1,21 +1,21 @@
-#include "dice.h"
+#include "die.h"
 #include <bits/stdc++.h>
 using namespace std;
 
-Dice::Dice(){
+Die::Die(){
   // init to 0 - unrolled
   value = 0;
 }
 
-void Dice::rollDice(){
+void Die::rollDie(){
   value = rand() % 6 + 1;
 }
 
-int Dice::getVal(){
+int Die::getVal(){
   return value;
 }
 
-void Dice::printDice(){
+void Die::printDie(){
     int v = getVal();
     if(v == 1)
         cout << "⚀";
@@ -32,7 +32,7 @@ void Dice::printDice(){
 
 }
 
-Dice::~Dice(){
+Die::~Die(){
 
 }
 

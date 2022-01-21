@@ -4,9 +4,9 @@ class Dice {
   
   public:
   Dice();
-  void rollDice();
-  int getVal();
   virtual ~Dice();
 
-    void printDice();
+  virtual void rollDice();
+  int getVal();
+  virtual void printDice();
 };

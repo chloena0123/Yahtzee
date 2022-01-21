@@ -18,7 +18,7 @@ void Game::rollDice() {
 }
 
 void Game::rollDice(int num){
-    cout << "Enter the die number you wish to reroll" << endl;
+    cout << "Enter the die number you wish to re-roll" << endl;
     for(int i = 0; i < num; i++){
         int input;
         cin >> input;

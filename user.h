@@ -15,24 +15,20 @@ public:
     void printDice();
     void rollDice(int num);
 
-    int countOnes();
-    int countTwos();
-    int countThrees();
-    int countFours();
-    int countFives();
-    int countSixes();
+    int countDuplicates(int val);
 
-    int threeOfaKind();
-    int fourOfaKind();
-    int fullHouse();
-    int smallStraight();
-    int largeStraight();
-    int yahtzee();
+    int calcThreeOfaKind();
+    int calcFourOfaKind();
+    int calcFullHouse();
+    int calcSmallStraight();
+    int calcLargeStraight();
+    int calcYahtzee();
 
     void setTopTotal();
     void setBottomTotal();
     void setGrandTotal();
     void getGrandTotal();
+
 
 
 
